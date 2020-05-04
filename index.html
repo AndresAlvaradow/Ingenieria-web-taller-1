@@ -1,80 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
-	<title> Taller 1 </title>
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title>Maquetació en HTML y CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-	<header class="cabeceraPrincipal">
-		<h1>Logotipo</h1>
-
-		<section class="seccionCabecera">
-
-			<div class="login">
-				<a href=""> Login </a>
-				<a href=""> REGISTER </a>	
-			</div>
-			<br>
-			<aside class="buscador">
-				<div>
-					<input type="text" name="buscar" class="form-control" placeholder="Buscar....">
-				</div>
-			</aside>
+    <header class="cabeceraPrincipal">
+        <div class="logo">
+            <p class="iniciales-logo">
+                IW
+            </p>
+            <h1>Ingeniería web</h1>
+        </div>
+        <section class="seccionCabecera">
+            <aside class="buscador">
+                <div class="barra-busqueda">
+                    <input type="text" placeholder="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </aside>
+        </section>
+    </header>
+    <nav class="menuPrincipal">
+        <a href=""><i class="fas fa-home"></i> Inicio</a>
+        <a href="">Acerca de</a>
+        <a href="">Artículos</a>
+        <a href="">Contactos</a>
+        <a href="">Registro</a>
+    </nav>
+    <section class="galeriaPrinicpal">
+        <img src="images/slide-1.jpg" alt="Imagen 1 del Slider prinipal">
+    </section>
+    <main>
+        <section class="articulo">
+            <article class="noticias">
+                <div class="contenedor1">
+                    <img src="images/img-01.jpg" alt="">
+                </div>
+                <div class="contenedor-texto">
+                    <div>
+                        <h2 class="titulo">
+                            Noticia de desarrollo web, metodologías
+                        </h2>
+                        <p class="fecha">Abril 24, 2020</p>
+                    </div>
+                    <p class="extracto">
+                        Información completa de la noticia en cuanto al desarrollo web, existen nuevas tecnologías de desarrolo..
+                    </p>
+                    <a href="" class="btn-link">Leer más</a>
+                </div>
+            </article>
+        </section>
+        <section class="articulo">
+            <article class="noticias">
+                <div class="contenedor1">
+                    <img src="images/img-02.jpg" alt="">
+                </div>
+                <div class="contenedor-texto">
+                    <div>
+                        <h2 class="titulo">
+                            Noticia de desarrollo web, metodologías
+                        </h2>
+                        <p class="fecha">Abril 25, 2020</p>
+                    </div>
+                    <p class="extracto">
+                        Información completa de la noticia en cuanto al desarrollo web, existen nuevas tecnologías de desarrolo..
+                    </p>
+                    <a href="" class="btn-link">Leer más</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <aside class="sponsor">
+        <section class="sponsorItem">
+			<div class="contenedorS">
+				<img src="images/sponsor1.png" alt="">
+			</div>       
 		</section>
-		
-	</header>
-	<main>
-		<nav class="menuPrincipal">
-			<div>
-				<a href=""> Inicio </a>
-				<a href=""> Servicios </a>
-				<a href=""> Portafolio </a>
-				<a href=""> Clientes </a>
-				<a href=""> Contactos </a>
-			</div>
-		</nav>
-		<section class="galeriaPrincipal">
-			SLIDER GALERIA
-		</section>
-		<section class="noticia">
-
-			<header> <h1> NOTICIAS </h1> </header>
-
-			<article class="noticia1">
-				<header>
-					<h2> Noticia 1 </h2>
-				</header>
-
-				<footer> Autor fecha </footer>
-
-			</article>
-
-			<article class="noticia2">
-				<header>
-					<h2> Noticia 2 </h2>
-				</header>
-
-				<footer> Autor Fecha</footer>
-			</article>
-
-		</section>
-
-		<section class="sponsor">
-			<header><h3>Sponsor</h3></header>
-
-			<div class="box"> Sponsor1</div>
-			<div class="box">Sponsor2</div>
-			<div class="box">Sponsor3</div>
-			<div class="box">Sponsor4</div>
-			<div class="box">Sponsor5</div>
-		</section>
-
-	</main>
-
-	<footer class="piePagina">
-		<span>PIE DE PAGINA</span>	
-	</footer>
-
+        <section class="sponsorItem">
+            <div class="contenedorS">
+                <img src="images/sponsor2.png" alt="">
+            </div> 
+        </section> 
+        <section class="sponsorItem">
+            <div class="contenedorS">
+                <img src="images/sponsor3.png" alt="">
+            </div> 
+        </section> 
+        <section class="sponsorItem">
+            <div class="contenedorS">
+                <img src="images/sponsor4.png" alt="">
+            </div>
+        </section>
+    </aside>
+    <footer class="piePagina">
+        <h5> <i class="far fa-copyright"></i> Todos los derechos reservador UTPL 2020</h5>
+    </footer>
 </body>
 </html>
